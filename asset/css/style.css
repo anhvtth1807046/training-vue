@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+* {
+    font-family: myFirstFont;
+ }
+ul {
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 0;
+}
+.box-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d5e7f1;
+  padding: 100px 0;
+  text-align: center;
+}
+.box-item {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+.item-image img {
+  width: 100%;
+}
+.item-info {
+  background-color: #ffffff;
+}
+.item-info .item-details li {
+  list-style: none;
+  padding: 15px;
+  color: #8a8787;
+}
+.item-subtitle {
+  font-size: 18px;
+  color: #948d8d;
+}
+.item-details {
+  padding-left: 0;
+}
+.item-subtitle-details {
+  font-size: 14px;
+  color: #bbb8b8;
+}
+.item-info .item-details li:nth-child(even) {
+  background-color: #f4f6f7;
+}
+.item-button {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+.item-button button {
+  border: 1px solid;
+  padding: 10px 32px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.item-ocean {
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.item-thumb {
+  position: relative;
+  height: 240px;
+}
+.item-thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.item-thumb__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-thumb__logo{
+    position: absolute;
+    z-index: 99999;
+    top: -3%;
+    left: 0;
+}
+.item-thumb__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 300;
+  z-index: 2;
+}
+.item-price {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  flex-direction: column;
+}
+.button-active:hover{
+    background-color: #6c136f;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button-active{
+    color: #6c136f;
+    background: transparent;
+}
+.button-green{
+    color: #4cae4c;
+    background: transparent;
+}
+.button-green:hover{
+    background-color: #4cae4c;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button-blue{
+    color: #46b8da;
+    background: transparent;
+}
+.button-blue:hover{
+    background-color: #46b8da;
+    color: #ffffff;
+    cursor: pointer;
+}
+.item__logo{
+    background-image: url('/asset/image/newmark.png');
+    width: 66px;
+    height: 66px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -3%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.price-dolar{
+    color: #46b8da;
+    font-size: 20px;
+}
+.item-price__pertour{
+    font-size: 12px;
+    color: #bbb8b8;
+}
+.price__dolar{
+    color: #6c136f;
+    font-size: 20px;
+}
+.item_dolar{
+    color: #4cae4c;
+    font-size: 20px;
+}
